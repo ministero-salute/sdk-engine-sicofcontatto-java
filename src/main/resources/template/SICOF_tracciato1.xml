@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<fls:FlsSicof_1 xmlns:fls="http://flussi.mds.it/FlsSicof_1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://flussi.mds.it/FlsSicof_1 SICOF_CONTATTO.XSD">
+	<fls:Contatto Data="31-12-2023-12-31" SoggRichiedente="1" IdAccesso="99999" IdNucleo="9999999">
+		<fls:Trasmissione Tipo="I"/>
+		<fls:Assistito>
+			<fls:DatiAnagrafici ComuneNascita="999999">
+				<fls:CUNI>1234asdfg56789012345678901234sdfg56789012sdfghjk098765redxcvt678iky6rfgy89okhtrdsxdrtttt</fls:CUNI>
+				<fls:validitaCI>0</fls:validitaCI>
+				<fls:tipologiaCI>3</fls:tipologiaCI>
+				<fls:AnnoNascita>1999</fls:AnnoNascita>
+				<fls:Genere>1</fls:Genere>
+				<fls:Cittadinanza>IT</fls:Cittadinanza>
+				<fls:StatoCivile>1</fls:StatoCivile>
+				<fls:CondProfessionale>1</fls:CondProfessionale>
+				<fls:TitoloStudio>1</fls:TitoloStudio>
+				<fls:Residenza>
+					<fls:RegioneRes>010</fls:RegioneRes>
+					<fls:CodASLRes>001</fls:CodASLRes>
+					<fls:ComuneRes>999999</fls:ComuneRes>
+				</fls:Residenza>
+			</fls:DatiAnagrafici>
+			<fls:Servizio>4</fls:Servizio>
+			<fls:PartEventoGruppo>4</fls:PartEventoGruppo>
+		</fls:Assistito>
+		<fls:Erogazione>
+			<fls:CodRegioneErg>010</fls:CodRegioneErg>
+			<fls:CodASLErg>010</fls:CodASLErg>
+			<fls:CodConsultorio>010034</fls:CodConsultorio>
+		</fls:Erogazione>
+	</fls:Contatto>
+</fls:FlsSicof_1>

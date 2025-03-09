@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<template>
+	<header>sicof/header.mustache</header>
+	<footer>sicof/footer.mustache</footer>
+	<node>
+		<openTemplate>sicof/open_contatto.mustache</openTemplate>
+		<closeTemplate>sicof/close_contatto.mustache</closeTemplate>
+		<node>
+			<openTemplate>sicof/blocco_sicof.mustache</openTemplate>
+			<comparingKeys>
+				reg_erog;asl_erog;cc_erog;data_cont;id_accesso;id_nucleo
+			</comparingKeys>
+		</node>
+	</node>
+</template>
