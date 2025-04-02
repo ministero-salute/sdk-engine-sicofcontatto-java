@@ -19,10 +19,7 @@ description:
   it-IT:
     localisedName: SDK Flusso Consultori familiari - Engine Contatto
     shortDescription: SDK - Sistema informativo Consultori Familiari Contatto
-    longDescription: L'SDK ha come scopo la predisposizione del dataset e l’invio in
-      merito ai dati di contatto relativi alle prestazioni consultoriali
-      previste dall’articolo 24 «Assistenza sociosanitaria ai minori, alle
-      donne, alle coppie, alle famiglie» DPCM 12 gennaio 2017 (Nuovi LEA).
+    longDescription: L'SDK ha come scopo la predisposizione del dataset e l’invio in merito ai dati di contatto relativi alle prestazioni consultoriali previste dall’articolo 24 «Assistenza sociosanitaria ai minori, alle donne, alle coppie, alle famiglie» DPCM 12 gennaio 2017 (Nuovi LEA).
     documentation: https://github.com/ministero-salute/sdk-engine-sicofcontatto-java
     features:
       - Invio dati
