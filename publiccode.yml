@@ -1,32 +1,35 @@
 publiccodeYmlVersion: "0.4"
-name: sdk-engine-sicofcontatto-java
+name: SDK Flusso Consultori familiari - Engine Contatto
 applicationSuite: SDK
 url: https://github.com/ministero-salute/sdk-engine-sicofcontatto-java
-landingURL: https://github.com/ministero-salute/sdk-engine-sicofcontatto-java
+landingURL: https://github.com/ministero-salute/sdk-engine-sicofcontatto-java?tab=readme-ov-file#readme
 softwareVersion: 1.0.0-SNAPSHOT
 releaseDate: 2025-03-09
 platforms:
   - windows
-  - mac
   - linux
+  - mac
 categories:
   - workflow-management
 usedBy:
   - Regioni
 developmentStatus: stable
-softwareType: standalone/web
+softwareType: standalone/backend
 description:
-  it:
-    localisedName: sdk-engine-sicofcontatto-java
+  it-IT:
+    localisedName: SDK Flusso Consultori familiari - Engine Contatto
     shortDescription: SDK - Sistema informativo Consultori Familiari Contatto
-    longDescription: Il microservizio ha come scopo l’acquisizione dei dati inviati
-      dalle Regioni in merito alle prestazioni consultoriali previste dall’articolo
-      24 «Assistenza sociosanitaria ai minori, alle donne, alle coppie, alle
-      famiglie» DPCM 12 gennaio 2017 (Nuovi LEA).
+    longDescription: L'SDK ha come scopo la predisposizione del dataset e l’invio in
+      merito ai dati di contatto relativi alle prestazioni consultoriali
+      previste dall’articolo 24 «Assistenza sociosanitaria ai minori, alle
+      donne, alle coppie, alle famiglie» DPCM 12 gennaio 2017 (Nuovi LEA).
     documentation: https://github.com/ministero-salute/sdk-engine-sicofcontatto-java
     features:
-      - Verifica Dati
-      - Invio Dati
+      - Invio dati
+      - Verifica dati
+it:
+  countryExtensionVersion: "1.0"
+  riuso: m_sa
 legal:
   license: BSD-3-Clause
 maintenance:
@@ -39,4 +42,4 @@ maintenance:
 localisation:
   localisationReady: false
   availableLanguages:
-    - it
+    - it-IT
