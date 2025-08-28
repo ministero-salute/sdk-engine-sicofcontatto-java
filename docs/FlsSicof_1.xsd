@@ -1,0 +1,262 @@
+<?xml version="1.0"?>
+<xs:schema attributeFormDefault="unqualified" elementFormDefault="qualified" targetNamespace="http://flussi.mds.it/FlsSicof_1" xmlns:fls="http://flussi.mds.it/FlsSicof_1" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+	<xs:simpleType name="TipoTrasmissione">
+		<xs:restriction base="xs:string">
+			<xs:pattern value="[IVC]{1}"/>
+		</xs:restriction>
+	</xs:simpleType>
+	<xs:simpleType name="IdAccesso">
+		<xs:restriction base="xs:positiveInteger">
+			<xs:maxInclusive value="99999"/>
+		</xs:restriction>
+	</xs:simpleType>
+	<xs:simpleType name="IdNucleo">
+		<xs:restriction base="xs:positiveInteger">
+			<xs:maxInclusive value="9999999"/>
+		</xs:restriction>
+	</xs:simpleType>
+	<xs:simpleType name="CUNI">
+		<xs:restriction base="xs:string">
+			<xs:length value="88"/>
+		</xs:restriction>
+	</xs:simpleType>
+	<xs:simpleType name="ValiditaCI">
+		<xs:restriction base="xs:integer">
+			<xs:pattern value="[0-1]{1}"/>
+		</xs:restriction>
+	</xs:simpleType>
+	<xs:simpleType name="TipologiaCI">
+		<xs:restriction base="xs:integer">
+			<xs:enumeration value="0"/>
+			<xs:enumeration value="1"/>
+			<xs:enumeration value="2"/>
+			<xs:enumeration value="3"/>
+			<xs:enumeration value="4"/>
+			<xs:enumeration value="97"/>
+			<xs:enumeration value="98"/>
+			<xs:enumeration value="99"/>
+		</xs:restriction>
+	</xs:simpleType>
+	<xs:simpleType name="AnnoNas">
+		<xs:restriction base="xs:int">
+			<xs:minInclusive value="1899"/>
+			<xs:maxInclusive value="2099"/>
+		</xs:restriction>
+	</xs:simpleType>
+	<xs:simpleType name="ComuneNas">
+		<xs:restriction base="xs:string">
+			<xs:pattern value="999999"/>
+			<xs:pattern value="[a-zA-Z0-9]{6}"/>
+			<xs:pattern value="99Z999"/>
+		</xs:restriction>
+	</xs:simpleType>
+	<xs:simpleType name="Genere">
+		<xs:restriction base="xs:string">
+			<xs:pattern value="[1-3]{1}"/>
+		</xs:restriction>
+	</xs:simpleType>
+	<xs:simpleType name="NucleoFamiliare">
+		<xs:restriction base="xs:int">
+			<xs:minInclusive value="0"/>
+			<xs:maxInclusive value="99"/>
+		</xs:restriction>
+	</xs:simpleType>
+	<xs:simpleType name="Cittadinanza">
+		<xs:restriction base="xs:string">
+			<xs:pattern value="[A-Z]{2}"/>
+		</xs:restriction>
+	</xs:simpleType>
+	<xs:simpleType name="StatoCivile">
+		<xs:restriction base="xs:string">
+			<xs:pattern value="[1-9]{1}"/>
+			<xs:pattern value="10"/>
+			<xs:pattern value="99"/>
+		</xs:restriction>
+	</xs:simpleType>
+	<xs:simpleType name="CondProfessionale">
+		<xs:restriction base="xs:int">
+			<xs:pattern value="[1-7]{1}"/>
+			<xs:pattern value="9"/>
+		</xs:restriction>
+	</xs:simpleType>
+	<xs:simpleType name="TitoloStudio">
+		<xs:restriction base="xs:int">
+			<xs:pattern value="[1-7]{1}"/>
+			<xs:pattern value="9"/>
+		</xs:restriction>
+	</xs:simpleType>
+	<xs:simpleType name="RegioneResidenza">
+		<xs:restriction base="xs:string">
+			<xs:pattern value="010"/>
+			<xs:pattern value="020"/>
+			<xs:pattern value="030"/>
+			<xs:pattern value="041"/>
+			<xs:pattern value="042"/>
+			<xs:pattern value="050"/>
+			<xs:pattern value="060"/>
+			<xs:pattern value="070"/>
+			<xs:pattern value="080"/>
+			<xs:pattern value="090"/>
+			<xs:pattern value="100"/>
+			<xs:pattern value="110"/>
+			<xs:pattern value="120"/>
+			<xs:pattern value="130"/>
+			<xs:pattern value="140"/>
+			<xs:pattern value="150"/>
+			<xs:pattern value="160"/>
+			<xs:pattern value="170"/>
+			<xs:pattern value="180"/>
+			<xs:pattern value="190"/>
+			<xs:pattern value="200"/>
+			<xs:pattern value="999"/>
+			<xs:pattern value="[A-Z]{3}"/>
+		</xs:restriction>
+	</xs:simpleType>
+	<xs:simpleType name="CodASLResidenza">
+		<xs:restriction base="xs:string">
+			<xs:length value="3"/>
+			<xs:pattern value="[0-9]{3}"/>
+			<xs:pattern value="999"/>
+		</xs:restriction>
+	</xs:simpleType>
+	<xs:simpleType name="ComuneRes">
+		<xs:restriction base="xs:string">
+			<xs:pattern value="999999"/>
+			<xs:pattern value="[a-zA-Z0-9]{6}"/>
+			<xs:pattern value="99Z999"/>
+		</xs:restriction>
+	</xs:simpleType>
+	<xs:simpleType name="SoggettoRichiedente">
+		<xs:restriction base="xs:string">
+			<xs:pattern value="[1-9]{1}"/>
+			<xs:pattern value="10"/>
+			<xs:pattern value="11"/>
+		</xs:restriction>
+	</xs:simpleType>
+	<xs:simpleType name="RegioneErogazione">
+		<xs:restriction base="xs:string">
+			<xs:pattern value="010"/>
+			<xs:pattern value="020"/>
+			<xs:pattern value="030"/>
+			<xs:pattern value="041"/>
+			<xs:pattern value="042"/>
+			<xs:pattern value="050"/>
+			<xs:pattern value="060"/>
+			<xs:pattern value="070"/>
+			<xs:pattern value="080"/>
+			<xs:pattern value="090"/>
+			<xs:pattern value="100"/>
+			<xs:pattern value="110"/>
+			<xs:pattern value="120"/>
+			<xs:pattern value="130"/>
+			<xs:pattern value="140"/>
+			<xs:pattern value="150"/>
+			<xs:pattern value="160"/>
+			<xs:pattern value="170"/>
+			<xs:pattern value="180"/>
+			<xs:pattern value="190"/>
+			<xs:pattern value="200"/>
+		</xs:restriction>
+	</xs:simpleType>
+	<xs:simpleType name="CodASLErogazione">
+		<xs:restriction base="xs:string">
+			<xs:length value="3"/>
+			<xs:pattern value="[0-9]{3}"/>
+			<xs:pattern value="999"/>
+		</xs:restriction>
+	</xs:simpleType>
+	<xs:simpleType name="CodiceConsultorioErogazione">
+		<xs:restriction base="xs:string">
+			<xs:length value="6"/>
+		</xs:restriction>
+	</xs:simpleType>
+	<xs:simpleType name="CodServizio">
+		<xs:restriction base="xs:int">
+			<xs:pattern value="[01-4]{1}"/>
+		</xs:restriction>
+	</xs:simpleType>
+	<xs:simpleType name="PartecEventoGruppo">
+		<xs:restriction base="xs:int">
+			<xs:pattern value="[1-5]{1}"/>
+		</xs:restriction>
+	</xs:simpleType>
+	<xs:simpleType name="StatoEstero">
+		<xs:restriction base="xs:string">
+			<xs:pattern value="[A-Za-z]{2}"/>
+		</xs:restriction>
+	</xs:simpleType>
+	<xs:simpleType name="Data_F">
+		<xs:restriction base="xs:string">
+			<xs:pattern value="(0[1-9]|[12][0-9]|3[01])-(0[1-9]|1[012])-(19|20)\d\d(19|20)\d\d-(0[1-9]|1[012])-(0[1-9]|[12][0-9]|3[01])"/>
+		</xs:restriction>
+	</xs:simpleType>
+	<xs:element name="Trasmissione">
+		<xs:complexType>
+			<xs:attribute name="Tipo" type="fls:TipoTrasmissione" use="required"/>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="Assistito">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element ref="fls:DatiAnagrafici"/>
+				<xs:element name="Servizio" type="fls:CodServizio"/>
+				<xs:element name="PartEventoGruppo" type="fls:PartecEventoGruppo" nillable="false" minOccurs="0"/>
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="DatiAnagrafici">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element name="CUNI" type="fls:CUNI"/>
+				<xs:element name="validitaCI" type="fls:ValiditaCI"/>
+				<xs:element name="tipologiaCI" type="fls:TipologiaCI"/>
+				<xs:element name="AnnoNascita" type="fls:AnnoNas"/>
+				<xs:element name="Genere" type="fls:Genere"/>
+				<xs:element name="Cittadinanza" type="fls:Cittadinanza"/>
+				<xs:element name="StatoCivile" type="fls:StatoCivile"/>
+				<xs:element name="CondProfessionale" type="fls:CondProfessionale"/>
+				<xs:element name="TitoloStudio" type="fls:TitoloStudio"/>
+				<xs:element ref="fls:Residenza"/>
+			</xs:sequence>
+			<xs:attribute name="ComuneNascita" type="fls:ComuneNas" use="required"/>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="Erogazione">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element name="CodRegioneErg" type="fls:RegioneErogazione"/>
+				<xs:element name="CodASLErg" type="fls:CodASLErogazione"/>
+				<xs:element name="CodConsultorio" type="fls:CodiceConsultorioErogazione"/>
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="FlsSicof_1">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element ref="fls:Contatto" maxOccurs="unbounded"/>
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="Residenza">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element name="RegioneRes" type="fls:RegioneResidenza"/>
+				<xs:element name="CodASLRes" type="fls:CodASLResidenza" nillable="false" minOccurs="1"/>
+				<xs:element name="ComuneRes" type="fls:ComuneRes"/>
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="Contatto">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element ref="fls:Trasmissione"/>
+				<xs:element ref="fls:Assistito"/>
+				<xs:element ref="fls:Erogazione"/>
+			</xs:sequence>
+			<xs:attribute name="Data" type="fls:Data_F" use="required"/>
+			<xs:attribute name="SoggRichiedente" type="fls:SoggettoRichiedente" use="required"/>
+			<xs:attribute name="IdAccesso" type="fls:IdAccesso" use="required"/>
+			<xs:attribute name="IdNucleo" type="fls:IdNucleo" use="optional"/>
+		</xs:complexType>
+	</xs:element>
+</xs:schema>
